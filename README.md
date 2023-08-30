@@ -46,7 +46,20 @@ Download and open the Postman application. Create a POST request for the followi
 ```bash
 POST http://localhost:3000/api/earth-mars-comm/message
 ```
-Feel free to customize the payload as needed for your communication. Select raw and JSON as the input format.
+
+Set the following headers in the request:
+
+    x-sender: earth or mars
+    x-receiver: mars or earth
+
+For the request body, select:
+
+    Type: raw
+    Format: JSON
+
+Feel free to customize the payload as needed for your communication.
+
+Here is an example payload:
 
 ```sh
 {
